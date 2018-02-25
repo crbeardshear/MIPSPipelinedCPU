@@ -146,6 +146,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(540,970)" to="(560,970)"/>
     <wire from="(590,460)" to="(610,460)"/>
     <wire from="(1260,500)" to="(1270,500)"/>
+    <wire from="(1400,780)" to="(1480,780)"/>
     <wire from="(680,150)" to="(700,150)"/>
     <wire from="(680,70)" to="(700,70)"/>
     <wire from="(160,750)" to="(180,750)"/>
@@ -388,6 +389,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(570,710)" to="(590,710)"/>
     <wire from="(500,880)" to="(520,880)"/>
     <wire from="(590,410)" to="(610,410)"/>
+    <wire from="(1400,730)" to="(1480,730)"/>
     <wire from="(730,150)" to="(750,150)"/>
     <wire from="(730,70)" to="(750,70)"/>
     <wire from="(510,720)" to="(540,720)"/>
@@ -453,6 +455,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="south"/>
       <a name="label" val="[EX]Ctrl[AluSrc]"/>
     </comp>
+    <comp lib="0" loc="(1480,730)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="label" val="Address"/>
+    </comp>
     <comp lib="0" loc="(1490,140)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="[WB]ALU[result]"/>
@@ -505,6 +512,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="selloc" val="tr"/>
       <a name="width" val="32"/>
       <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1580,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="[WB]ALU[result]"/>
     </comp>
     <comp lib="0" loc="(570,1140)" name="Tunnel">
       <a name="width" val="5"/>
@@ -1027,14 +1039,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="label" val="[WB]WrData"/>
     </comp>
-    <comp lib="0" loc="(1580,400)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="[WB]ReadData"/>
-    </comp>
     <comp lib="0" loc="(750,210)" name="Tunnel">
       <a name="width" val="5"/>
       <a name="label" val="[EX]Ins[rd]"/>
+    </comp>
+    <comp lib="0" loc="(1580,420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="[WB]ReadData"/>
     </comp>
     <comp lib="0" loc="(60,540)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -1176,11 +1188,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="label" val="Clock"/>
     </comp>
-    <comp lib="0" loc="(1580,420)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="[WB]ALU[result]"/>
-    </comp>
     <comp lib="0" loc="(1030,170)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
@@ -1206,6 +1213,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="appear" val="center"/>
     </comp>
     <comp loc="(1280,380)" name="Data Memory"/>
+    <comp lib="0" loc="(1400,730)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="[WB]WrData"/>
+    </comp>
     <comp lib="0" loc="(150,640)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="[M]Ctrl[PCSrc]"/>
@@ -1269,6 +1281,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(960,720)" name="Tunnel">
       <a name="width" val="3"/>
       <a name="label" val="[EX]ALUCtrl"/>
+    </comp>
+    <comp lib="0" loc="(1400,780)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="[WB]ALU[result]"/>
     </comp>
     <comp lib="0" loc="(1480,900)" name="Probe">
       <a name="facing" val="west"/>
@@ -1401,6 +1418,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(1100,70)" name="Tunnel">
       <a name="width" val="2"/>
       <a name="label" val="[M]Ctrl[WB]"/>
+    </comp>
+    <comp lib="0" loc="(1480,780)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="label" val="ALU Result"/>
     </comp>
     <comp lib="0" loc="(570,1120)" name="Tunnel">
       <a name="width" val="5"/>
